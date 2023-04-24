@@ -18,9 +18,9 @@ Es un lengaje de programación de Scripting en Windows, nos permite interacturar
 
 Para obtener ayuda de un comando en especifico debemos utilizar la siguiente sintaxis **Get-Help Get-Cmdlet** y le podemos pasar los parametros **-Examples -Detailed -Full -Online** por ejemplo:
 
-`
+```
 Get-Help Get-ChildItem -Online
 Get-Help Copy-Item -Examples
-`
+```
 
 By: **Fabian Feria**
