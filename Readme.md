@@ -23,4 +23,40 @@ Get-Help Get-ChildItem -Online
 Get-Help Copy-Item -Examples
 ```
 
+## Variables
+
+Podemos definir las variables de 2 formas una implícita y otra explícita.
+
+- La variables no se deben definir con caracteres especiales.
+- Deben ser entendible el nombre que les coloquemos.
+- para sefinir una variable debemos ante poner un **$** + Nombre = Valor.
+
+![Definición de nuevas variable](/img/NewVariables.png)
+
+
+**Forma Implicita**
+
+`$nombre = "Fabian Andres"`
+
+**Forma Explicita**
+
+```
+New-Variable $nombre
+New-Variable -Name $nombre
+New-Variable -Name $nombre -Value 'Fabian Andres'
+```
+
+## Constantes
+
+La costantes al contrario de las variables tienen que definirse de forma explícita
+
+`New-Variable -Name $nombre -Value 'Fabian Andres' -Option RadHonly`
+
+### Leer y escribir datos por pantalla
+
+**Read-Host** nos permite capturar datos por pantalla por ejemplo `$nombre = Read-Host "Por favor digite su nombre" `
+**Write-Host** nos permite mostrar por pantalla el valor de una variable por ejemplo `$nombre = Write-Host "Hola $nombre" `
+
+
+
 By: **Fabian Feria**
