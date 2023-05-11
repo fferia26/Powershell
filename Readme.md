@@ -189,7 +189,7 @@ Los operadores de comparación permiten comparar valores o buscar valores que co
 
 ### -gt, -ge, -lt y -le
 
-**-gt, -ge, -lty -le** se comportan de forma muy similar. Cuando ambos lados son escalares, devuelven True o False en función de cómo se comparen los dos lados:
+**-gt, -ge, -lt y -le** se comportan de forma muy similar. Cuando ambos lados son escalares, devuelven True o False en función de cómo se comparen los dos lados:
 
 ```
 Operador 	Devuelve True cuando...
