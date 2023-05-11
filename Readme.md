@@ -149,5 +149,56 @@ $n = 2
 $n += 5
 ```
 
+### Operadores de Comparación
+
+Los operadores de comparación permiten comparar valores o buscar valores que coincidan con los patrones especificados. PowerShell incluye los siguientes operadores de comparación:
+
+#### Igualdad
+
+```    
+    -eq, -ieq, : -ceq es igual a
+    -ne, -ine, , -cne no es igual a
+    -gt, -igt, : -cgt mayor que
+    -ge, -ige, : -cge mayor o igual que
+    -lt, -ilt, : -clt menor que
+    -le, -ile, , -cle : menor o igual que
+```
+
+#### Matching
+
+    -like, -ilike, -clike : la cadena coincide con el patrón de caracteres comodín
+    -notlike, -inotlike, : -cnotlike la cadena no coincide con el patrón de caracteres comodín
+    -match, -imatch, : -cmatch la cadena coincide con el patrón regex
+    -notmatch, -inotmatch, -cnotmatch : la cadena no coincide con el patrón regex
+
+#### Sustitución
+
+    -replace, -ireplace, -creplace : reemplaza las cadenas que coinciden con un patrón regex.
+
+#### Contención
+
+    -contains, -icontains, : -ccontains la colección contiene un valor
+    -notcontains, -inotcontains, : -cnotcontains la colección no contiene un valor
+    -in : el valor está en una colección.
+    -notin : el valor no está en una colección.
+
+#### Tipo
+
+    -is : ambos objetos son del mismo tipo.
+    -isnot : los objetos no son del mismo tipo.
+
+### -gt, -ge, -lt y -le
+
+**-gt, -ge, -lty -le** se comportan de forma muy similar. Cuando ambos lados son escalares, devuelven True o False en función de cómo se comparen los dos lados:
+
+```
+Operador 	Devuelve True cuando...
+-gt 	    El lado izquierdo es mayor
+-ge 	    El lado izquierdo es mayor o igual que
+-lt 	    El lado izquierdo es más pequeño
+-le 	    El lado izquierdo es menor o igual que
+```
+
+En los ejemplos siguientes, todas las instrucciones devuelven True.
 
 By: **Fabian Feria**
