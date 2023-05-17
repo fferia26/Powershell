@@ -15,7 +15,7 @@ New-LocalUser "Admin" -Description "Admin de Tecnología" -PasswordNeverExpires
 ### Crear una cuenta sin contraseña
 New-LocalUser "Admin" -Description "Admin de Tecnología" -NoPassword
 
-### Crear un usuario y agregarlo al grupo Administradores, todo en una sola linea
+### Crear un usuario y agregarlo al grupo "Usuarios de escritorio remoto", todo en una sola linea
 New-LocalUser "Fabian" -Description "Fabian Andres" -NoPassword | Add-LocalGroupMember "Usuarios de escritorio remoto"
 
 ### Listar todos los usuarios del sistema
