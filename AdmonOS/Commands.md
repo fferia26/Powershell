@@ -1,15 +1,15 @@
 # Comando utiles para la administración de Microsoft Windows
 
 ## Litar todos los modulos de Powershell
-´´´
+```
 Get-Module -ListAvailable
 Get-Module -ListAvailable -All
-´´´
+```
 
 ## Mostrar los comandos de un modulo en especifico en este caso de "Cuentas locales"
-´´´
+```
 Get-Command -Module Microsoft.PowerShell.LocalAccounts
-´´´
+```
 
 ## Crear cuentas de usuario local
 
