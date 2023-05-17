@@ -24,7 +24,12 @@ Get-LocalUser
 ### Listar todos los grupos del sistema
 Get-LocalGroup
 
-### Listar todos los miebros del grupo Administradores
-Get-LocalGroupMember "Administradores"
+### Listar todos los miebros de un grupo
+Get-LocalGroupMember -Name "Administradores"
+Get-LocalGroupMember -Name "Usuarios de escritorio remoto"
 
+### Deshabilitar el usuario Admin
+Disable-LocalUser Admin
 
+### Remover el usuario "Admin"
+Remove-LocalUser "Admin"
