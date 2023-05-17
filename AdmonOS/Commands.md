@@ -14,32 +14,32 @@ Get-Command -Module Microsoft.PowerShell.LocalAccounts
 ## Crear cuentas de usuario local
 
 ### Creamos la cuenta y una vez se ejecuta el comando nos solicita la contraseña para el nuevo usuario
-´´´
+```
 New-LocalUser "Admin" -Description "Admin de Tecnología" -PasswordNeverExpires
-´´´
+```
 
 ### Crear una cuenta sin contraseña
-´´´
+```
 New-LocalUser "Admin" -Description "Admin de Tecnología" -NoPassword
-´´´
+```
 
 ### Crear un usuario y agregarlo al grupo Administradores, todo en una sola linea
-´´´
+```
 $usuario = New-LocalUser "Fabian" -Description "Fabian Andres" -NoPassword | Add-LocalGroupMember -Group "Usuarios de escritorio remoto" -Member $usuario
-´´´
+```
 
 ### Listar todos los usuarios del sistema
-´´´
+```
 Get-LocalUser
-´´´
+```
 
 ### Listar todos los grupos del sistema
-´´´
+```
 Get-LocalGroup
-´´´
+```
 
 ### Listar todos los miebros del grupo Administradores
-´´´
+```
 Get-LocalGroupMember "Administradores"
-´´´
+```
 
