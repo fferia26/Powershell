@@ -16,7 +16,7 @@ New-LocalUser "Admin" -Description "Admin de Tecnología" -PasswordNeverExpires
 New-LocalUser "Admin" -Description "Admin de Tecnología" -NoPassword
 
 ### Crear un usuario y agregarlo al grupo Administradores, todo en una sola linea
-$usuario = New-LocalUser "Fabian" -Description "Fabian Andres" -NoPassword | Add-LocalGroupMember -Group "Usuarios de escritorio remoto" -Member $usuario
+New-LocalUser "Fabian" -Description "Fabian Andres" -NoPassword | Add-LocalGroupMember "Usuarios de escritorio remoto"
 
 ### Listar todos los usuarios del sistema
 Get-LocalUser
